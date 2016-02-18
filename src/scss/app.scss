@@ -1,0 +1,106 @@
+@import 'base';
+@import 'mixins';
+@import "utilitie";
+
+.logo {
+	max-width: 350px;
+}
+
+.offer {
+	margin-bottom: 1rem;
+	border-radius: 10px;
+	overflow: hidden;
+	&.expanded .offer-content {
+		display: flex!important;
+	}
+}
+
+.offer-cashback {
+	padding: 1rem;
+	h3 {
+		color: #000;
+	}
+}
+
+.offer-text {
+
+}
+
+.header-section-toggle {
+	padding: 1rem 2rem;
+	background: linear-gradient(#183980, #01023A);
+} 
+
+nav {
+	width: 100%;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+	li {
+		display: inline-block;
+		background: linear-gradient(#183980, #01023A);
+		padding: 0 10px;
+		margin: 0 2px;
+		height: 2.5rem;
+		line-height: 2.5rem;
+	}
+	a {
+		display: block;
+		color: #FFF;
+		text-decoration:  none;
+		&:hover {
+			text-decoration: underline;
+			color: #FFF;
+		}
+	} 
+}
+
+h1 {
+	color: #FFF;
+	line-height: 30px;
+	height: 30px;
+	margin: 0;
+}
+
+.offer-content {
+	display: none!important;
+	background: #FFF;
+	padding: 1rem;
+}
+
+.offer.expanded
+.arrow-decoration {
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+.arrow-decoration {
+	transition: all .2s ease-in-out;
+	color: green;
+	font-weight: bold;
+	font-size: 20px;
+	margin-right: 0.5rem;
+}
+
+.icon {
+	float: left;
+	display: block;
+	width: 20px;
+	line-height: 2.5rem;
+	height: 2.5rem;
+	background-size: contain;
+	background-position: 50%;
+	margin-right: 10px;
+}
+
+
+.card-rate {
+	line-height: 2rem;
+}
+
+
+@media (max-width: 600px) {
+	@import "mobile";
+}

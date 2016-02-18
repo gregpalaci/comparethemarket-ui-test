@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Setup</title>
+  <!-- critical to page layout CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" />
+  <script src="https://cdn.rawgit.com/github/fetch/master/fetch.js"></script>
+  <!-- start non blocking download of application -->
+  <!-- <script src="../build/js/app.js" async defer></script> -->
+   <script src="../app.js" async defer></script>
+</head>
+<body>
+<!-- http://keithclark.co.uk/articles/loading-css-without-blocking-render/ -->
+<link rel="stylesheet" href="../build/css/app.css" />
+<link rel="stylesheet" href="./css/iconizr-svg-data.css" />
+ 
+  <header class="">
+	<div class="">
+		<img class="logo" src="img/ctm-logo.svg" width="100%" height="auto" />
+	</div>
+	<nav>
+		<ul class="">
+			<li class="">
+				<a href="#">
+				Home
+				</a>
+			</li>
+			<li class="">
+				<a href="#">
+				<span class="icon icon-vehicles"></span>
+				Vehicles
+				</a>
+			</li>
+			<li class="">
+				<a href="#">
+				<span class="icon icon-pet"></span>
+				Home & Pets
+				</a>
+			</li>
+			<li class="">
+				<a href="#">
+				<span class="icon icon-finance"></span>
+				Home & Pets
+				</a>
+			</li>
+		</ul>
+	</nav>
+  </header>
+
+   <div id="app"></div>
+
+</body>
+</html>

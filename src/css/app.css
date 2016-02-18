@@ -1,0 +1,204 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+  background: #1B468E;
+}
+
+body {
+  padding: 2em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+  color: #FFF;
+  margin: 0;
+}
+
+/*
+$fontbase = 16
+$line-height-base = 26
+*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  /* $line-height-base ÷ $fontbase */
+}
+
+h1,
+h2 {
+  font-size: 2.6rem;
+  line-height: 1;
+  /* $line-height-base ÷ 26 */
+}
+
+h3,
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.444;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  color: inherit;
+  font-weight: bold;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.txt-l {
+  text-align: left;
+}
+
+.txt-r {
+  text-align: right;
+}
+
+.txt-c {
+  text-align: center;
+}
+
+.vr {
+  height: 80%;
+  top: 10%;
+  display: inline-block;
+  width: 1px;
+  background: #CCC;
+  position: absolute;
+  right: 0;
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aligner-item {
+  flex: 1;
+}
+
+.logo {
+  max-width: 350px;
+}
+
+.offer {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.offer.expanded .offer-content {
+  display: flex !important;
+}
+
+.offer-cashback {
+  padding: 1rem;
+}
+
+.offer-cashback h3 {
+  color: #000;
+}
+
+.header-section-toggle {
+  padding: 1rem 2rem;
+  background: linear-gradient(#183980, #01023A);
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+nav li {
+  display: inline-block;
+  background: linear-gradient(#183980, #01023A);
+  padding: 0 10px;
+  margin: 0 2px;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+
+nav a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+
+h1 {
+  color: #FFF;
+  line-height: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+.offer-content {
+  display: none !important;
+  background: #FFF;
+  padding: 1rem;
+}
+
+.offer.expanded
+.arrow-decoration {
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+.arrow-decoration {
+  transition: all .2s ease-in-out;
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 0.5rem;
+}
+
+.icon {
+  float: left;
+  display: block;
+  width: 20px;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  background-size: contain;
+  background-position: 50%;
+  margin-right: 10px;
+}
+
+.card-rate {
+  line-height: 2rem;
+}
+
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}
